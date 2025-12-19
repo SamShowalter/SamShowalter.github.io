@@ -673,13 +673,15 @@ footer {
 	font-size: 1.5em;
 	font-weight: 300;
 	color: #374054;
-	margin: 0 0 15px 0
+	margin: 0 0 15px 0;
+	text-align: left
 }
 
 .project-info p {
 	color: #74808a;
 	margin: 0 0 15px 0;
-	font-size: 1.0em
+	font-size: 1.0em;
+	text-align: left
 }
 
 .no-image .project-info {
@@ -1052,4 +1054,84 @@ footer {
 		font-size: 0.9em;
 		padding: 5px 10px
 	}
+}
+
+/* Custom utility classes for cleaner HTML */
+.social-links-table {
+	border-collapse: separate;
+	border-spacing: 40px 0;
+	margin: 0 auto;
+	text-align: center !important;
+}
+
+.social-links-table td {
+	text-align: center !important;
+}
+
+.social-links-table th {
+	text-align: center !important;
+}
+
+.figure-center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.large-text {
+	font-size: 1.5em;
+}
+
+.profile-image {
+	max-width: 300px;
+	max-height: 270px;
+	width: 300px;
+	height: 270px;
+	display: block;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.company-logo {
+	max-width: 450px;
+	max-height: 75px;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+}
+
+.research-thumbnail {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
+
+/* Experience section logos (wrapped in education-image) */
+#experience .education-image img {
+	max-width: 450px;
+	max-height: 75px;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+}
+
+/* Education section images */
+#education .education-image img {
+	width: 300px;
+	height: 300px;
+	object-fit: contain;
+}
+
+/* Project images */
+.project-image img {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
 }

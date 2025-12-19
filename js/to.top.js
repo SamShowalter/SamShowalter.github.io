@@ -20,3 +20,8 @@ function topFunction() {
   behavior: 'smooth',
   });
 }
+
+// Add event listener for the button click
+if (mybutton) {
+  mybutton.addEventListener('click', topFunction);
+}

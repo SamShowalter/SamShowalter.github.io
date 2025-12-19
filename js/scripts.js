@@ -43,8 +43,8 @@
     // Create timeline
     $('#experience-timeline').each(function() {
 
-        $this = $(this); // Store reference to this
-        $userContent = $this.children('div'); // user content
+        var $this = $(this); // Store reference to this
+        var $userContent = $this.children('div'); // user content
 
         // Create each timeline block
         $userContent.each(function() {
@@ -84,13 +84,15 @@
         });
     });
 
-    n("#view-more-research").click(function(e) {
-        e.preventDefault(), n(this).fadeOut(300, function() {
-            n("#more-research").fadeIn(300)
-        })
-    }),
+    // Load additional research
+    $("#view-more-research").click(function(e) {
+        e.preventDefault();
+        $(this).fadeOut(300, function() {
+            $("#more-research").fadeIn(300);
+        });
+    });
 
-    // Load additional projects
+    // Load additional experiences
     $('#view-more-experiences').click(function(e){
         e.preventDefault();
         $(this).fadeOut(300, function() {
